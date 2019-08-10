@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #293958;
+
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #293958;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  flex-basis: 50%;
+}
+
+.CharacterCard {
+  width: 100%;
+  height: 240px;
+  background: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.CharacterCard__name-container {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 0.5rem;
+}
+
+.char-title {
+  color: #61dafb;
+}
+
+.char-card-container {
+  transition: all 0.4s ease;
+}
+.more-info-container{
+  margin-top: -18px;
+  margin-bottom:20px;
+  padding:12px;
+  background: #000;
+}
+.more-info-container > .white-text {
+  color:#fff;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .col-md-3 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .App-logo1 {
+    max-width:400px;
+  }
+}
